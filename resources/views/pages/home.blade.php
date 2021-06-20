@@ -5,7 +5,7 @@
     <div class="w-full px-3 py-6 mx-auto mt-8 text-center md:px-0 md:w-4/5 lg:w-2/3">
         <h1 class="font-bold uppercase text-7xl">I Am Gage</h1>
         <h2 class="text-4xl font-bold text-indigo-600 uppercase">Web Developer</h2>
-        <p class="mt-8 text-lg" id="about">
+        <p class="mt-8 text-lg">
             Hello, I am Gage! I enjoy programming a lot. I've created websites,
             Web Applications, and more. I am a self taught developer and I have been programming for ~8 years and still
             learning new technologies every day, mostly focusing on Laravel and design.
@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div class="w-full px-3 py-6 mx-auto mt-8 md:px-0 md:w-4/5 lg:w-2/3" id="skills">
+    <div class="w-full px-3 py-6 mx-auto mt-8 md:px-0 md:w-4/5 lg:w-2/3" id="about">
         <h1 class="text-3xl font-bold text-indigo-600">About Me</h1>
         <div class="px-3 mt-3 md:flex">
             <img src="{{ asset('images/me.png') }}" alt="Me!" class="block w-48 h-48 m-auto rounded-full md:mr-4">
@@ -118,25 +118,12 @@
 
             <div class="w-full p-4 lg:w-1/2">
                 <div class="relative w-full p-5 pb-16 rounded-lg bg-secondary">
-                    <h3 class="text-2xl font-semibold">Title</h3>
-                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem recusandae sequi
-                        molestiae
-                        voluptates quisquam eaque pariatur debiti
+                    <h3 class="text-2xl font-semibold">This Website!</h3>
+                    <p class="">New and improved website for Gage's Space. Will feature a blog section as well as all docs
+                        for my other projects. Be sure to look around and fell free to use the contact form on the bottom to
+                        reach me!
                     </p>
-                    <a href="#"
-                        class="absolute bottom-0 left-0 inline-block px-3 py-2 mb-5 ml-5 font-semibold text-black bg-gray-300 rounded-lg hover:bg-white">View
-                        Code</a>
-                </div>
-            </div>
-
-            <div class="w-full p-4 lg:w-1/2">
-                <div class="relative w-full p-5 pb-16 rounded-lg bg-secondary">
-                    <h3 class="text-2xl font-semibold">Title</h3>
-                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam rem recusandae sequi
-                        molestiae
-                        voluptates quisquam eaque pariatur debiti
-                    </p>
-                    <a href="#"
+                    <a href="https://github.com/gsbarbo/gagesspace"
                         class="absolute bottom-0 left-0 inline-block px-3 py-2 mb-5 ml-5 font-semibold text-black bg-gray-300 rounded-lg hover:bg-white">View
                         Code</a>
                 </div>
