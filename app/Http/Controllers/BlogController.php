@@ -13,8 +13,8 @@ class BlogController extends Controller
 
     public function index(): View
     {
-        $blogs = Posts::all();
-        return view('blogs.index', compact('blogs'));
+        $posts = Posts::all();
+        return view('blogs.index', compact('posts'));
     }
 
     public function create(): View
