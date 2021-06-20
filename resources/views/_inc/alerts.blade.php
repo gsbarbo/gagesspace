@@ -68,7 +68,7 @@
             </svg>
         </div>
         <div class="flex-initial max-w-full text-xl font-normal">
-            The email form had some issues. <a href="#contact" class="">Click here to see why.</a>
+            The form had some issues. Look below for more information
         </div>
         <div class="flex flex-row-reverse flex-auto">
             <div>

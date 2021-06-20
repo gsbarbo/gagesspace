@@ -26,10 +26,42 @@
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Projects</a>
             <a href="#contact" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Contact</a>
-            <a href="#" @click="mobileMenuOpen = false"
+            <a href="{{ route('blog.index') }}" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Blog</a>
             <a href="#" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Docs</a>
+            @guest
+                <a href="{{ route('login') }}" @click="mobileMenuOpen = false"
+                    class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Login</a>
+                <a href="{{ route('register') }}" @click="mobileMenuOpen = false"
+                    class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Register</a>
+            @endauth
+            @auth
+                <div class="relative block w-full" x-data="{open: false}">
+                    <button @click="open = !open"
+                        class="block w-full py-2 font-semibold text-left hover:underline lg:px-4 lg:py-1 lg:pt-2"
+                        :class="{'font-semibold': open, 'shadow-none': open}">
+                        {{ auth()->user()->name }}
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" :class="{'rotate-180': open}"
+                            class="inline-block w-6 h-6 ml-1 text-gray-500 transform fill-current">
+                            <path fill-rule="evenodd"
+                                d="M15.3 10.3a1 1 0 011.4 1.4l-4 4a1 1 0 01-1.4 0l-4-4a1 1 0 011.4-1.4l3.3 3.29 3.3-3.3z" />
+                        </svg>
+                    </button>
+
+                    <ul x-show="open" @click.away="open = false"
+                        class="absolute w-full py-1 mt-2 text-indigo-600 rounded shadow lg:w-40 bg-primary"
+                        x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform -translate-y-2"
+                        x-transition:enter-end="opacity-100 transform translate-y-0"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-end="opacity-0 transform -translate-y-3">
+                        <li><a href="#" class="block px-3 py-1 hover:bg-gray-600">Profile</a></li>
+                        <li><a href="#" class="block px-3 py-1 hover:bg-gray-700">Admin</a></li>
+                        <li><a href="#" class="block px-3 py-1 border-t hover:bg-gray-700">Log out</a></li>
+                    </ul>
+                </div>
+            @endauth
         </div>
     </nav>
 </header>
