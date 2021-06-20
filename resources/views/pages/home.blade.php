@@ -101,6 +101,24 @@
             <div class="w-full p-4 lg:w-1/2">
                 <div class="relative w-full p-5 pb-16 rounded-lg bg-secondary">
                     <h3 class="text-2xl font-semibold">FiveM CAD/MDT System</h3>
+                    <div class="text-xs">
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-red-600 rounded-full">
+                            Laravel
+                        </button>
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-indigo-600 rounded-full">
+                            PHP
+                        </button>
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-green-600 rounded-full">
+                            TailwindCSS
+                        </button>
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-yellow-600 rounded-full">
+                            Open Source
+                        </button>
+                    </div>
                     <p class="">
                         This is a police type CAD/MDT system for roleplay communities. This is a work in progress to open
                         source it. It includes everything from applications to whitelisting while still a fully functional
@@ -110,8 +128,8 @@
                         <a href="https://github.com/gsbarbo/Fivem-Cad"
                             class="inline-block px-3 py-2 mb-5 ml-5 font-semibold text-black bg-gray-300 rounded-lg hover:bg-white">View
                             Code</a>
-                        <a href="#"
-                            class="inline-block px-3 py-2 mb-5 ml-5 font-semibold text-black bg-gray-300 rounded-lg hover:bg-white">Preview</a>
+                        {{-- <a href="#"
+                            class="inline-block px-3 py-2 mb-5 ml-5 font-semibold text-black bg-gray-300 rounded-lg hover:bg-white">Preview</a> --}}
                     </div>
                 </div>
             </div>
@@ -119,6 +137,24 @@
             <div class="w-full p-4 lg:w-1/2">
                 <div class="relative w-full p-5 pb-16 rounded-lg bg-secondary">
                     <h3 class="text-2xl font-semibold">This Website!</h3>
+                    <div class="text-xs">
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-red-600 rounded-full">
+                            Laravel
+                        </button>
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-indigo-600 rounded-full">
+                            PHP
+                        </button>
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-green-600 rounded-full">
+                            TailwindCSS
+                        </button>
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-yellow-600 rounded-full">
+                            Open Source
+                        </button>
+                    </div>
                     <p class="">New and improved website for Gage's Space. Will feature a blog section as well as all docs
                         for my other projects. Be sure to look around and fell free to use the contact form on the bottom to
                         reach me!
