@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SendEmailController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,8 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'pages.home')->name('home');
 Route::post('/send', [SendEmailController::class, 'send'])->name('send.email');
-
-Route::resource('/blog', BlogController::class);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
