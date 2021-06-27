@@ -21,14 +21,21 @@
                                 <a href="#" class="pb-4 text-sm font-bold text-white uppercase">Technology</a>
                                 <a href="{{ route('blog.show', $post->slug) }}"
                                     class="pb-4 text-3xl font-bold title">{{ $post->title }}</a>
-                                <p href="#" class="pb-3 text-sm">
-                                    By <a href="#" class="font-bold">{{ $post->user->name }}</a>, Published on
+                                <p class="pb-3 text-sm">
+                                    By <a href="#" class="font-bold">{{ $post->user->name }}</a>, Created on
                                     {{ date('jS M Y', strtotime($post->created_at)) }}
                                 </p>
-                                <a href="#" class="pb-6">{{ $post->description }}..</a>
+                                <p class="pb-6">
+                                    @if (strlen($post->description) > 200)
+                                        {{ substr($post->description, 3, 200) . '...' }}
+                                    @else
+                                        {!! $post->description !!}
+                                    @endif
+
+                                </p>
                                 <a href="{{ route('blog.show', $post->slug) }}"
-                                    class="text-white uppercase hover:underline">Continue Reading <i
-                                        class="fas fa-arrow-right"></i></a>
+                                    class="text-white uppercase hover:underline">Continue Reading
+                                    <i class="fas fa-arrow-right"></i></a>
                             </div>
                         </article>
 
@@ -39,26 +46,21 @@
                 </section>
 
                 <!-- Sidebar Section -->
-                <aside class="flex flex-col items-center w-full px-3 md:w-1/3">
-
+                <aside class="flex flex-col w-full px-3 md:w-1/3">
                     @if (Auth::check())
-                        <div class="w-4/5 m-auto pt-15">
-                            <a href="{{ route('blog.create') }}" class="px-3 py-2 bg-indigo-600"><i
-                                    class="fas fa-plus"></i> Create Post</a>
+                        <div class="w-4/5 pt-15">
+                            <a href="{{ route('blog.create') }}" class="px-3 py-2 bg-indigo-600">
+                                <i class="fas fa-plus"></i> Create Post</a>
                         </div>
                     @endif
 
                     <div class="flex flex-col w-full p-6 my-4 border-2 border-indigo-600">
-                        <div class="flex justify-between">
-                            <p class="pb-5 text-xl font-semibold text-indigo-600">Catagories</p>
-                            <a href="#" class="pb-2">View All Posts</a>
-                        </div>
+                        <p class="pb-5 text-xl font-semibold text-indigo-600 underline">Catagories</p>
                         <a href="#" class="pb-2 hover:underline">Technology</a>
                         <a href="#" class="pb-2 hover:underline">Software</a>
                         <a href="#" class="pb-2 hover:underline">Off Topic</a>
                         <a href="#" class="pb-2 hover:underline">About Me</a>
                     </div>
-
 
                 </aside>
             </div>

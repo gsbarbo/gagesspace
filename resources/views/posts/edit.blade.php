@@ -35,10 +35,9 @@
                             autocomplete="off">
                     </div>
 
-                    <div class="flex flex-col mb-3">
+                    <div class="flex flex-col mb-3" style="color:black !important;">
                         <label for="description">Description<span class="text-red-600">*</span></label>
-                        <textarea rows="4" id="description" name="description"
-                            class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-indigo-500 focus:outline-none focus:bg-gray-800 focus:text-indigo-500">{{ $post->description }}</textarea>
+                        <textarea rows="4" id="description" name="description">{{ $post->description }}</textarea>
                     </div>
 
                     <div class="flex justify-center w-full my-6">
@@ -79,5 +78,13 @@
             background-color: #4F46E5;
         }
 
+        .ck-editor__main * {
+            color: black !important;
+        }
+
     </style>
+@endsection
+
+@section('scripts')
+    @include('_inc.ckeditor')
 @endsection

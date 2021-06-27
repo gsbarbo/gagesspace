@@ -87,4 +87,17 @@ class PostsController extends Controller
         $slug->delete();
         return redirect()->route('blog.index')->with('success', 'Post has been deleted!');
     }
+
+    public function image_upload()
+    {
+
+        $post = new Post();
+        $post->id = 0;
+        $post->exists = true;
+        $image = $post->addMediaFromRequest('upload')->toMediaCollection('images');
+
+        return response()->json([
+            'url' => $image->getUrl('thumb'),
+        ]);
+    }
 }

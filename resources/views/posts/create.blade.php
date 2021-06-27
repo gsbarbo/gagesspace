@@ -83,5 +83,13 @@
             background-color: #4F46E5;
         }
 
+        .ck-editor__main * {
+            color: black !important;
+        }
+
     </style>
+@endsection
+
+@section('scripts')
+    @include('_inc.ckeditor')
 @endsection

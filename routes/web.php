@@ -20,6 +20,7 @@ Route::view('/staticblog', 'pages.staticblog')->name('static.blog');
 
 Route::resource('/blog', PostsController::class)
     ->parameters(['blog' => 'slug']);
+Route::post('/blog/image_upload', [PostsController::class, 'image_upload'])->name('blog.image_upload');
 
 Route::post('/send', [SendEmailController::class, 'send'])->name('send.email');
 
