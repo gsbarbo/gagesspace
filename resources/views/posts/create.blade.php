@@ -32,6 +32,16 @@
                     </div>
 
                     <div class="flex flex-col mb-3">
+                        <label for="category_id">Category<span class="text-red-600">*</span></label>
+                        <select id="category_id" name="category_id"
+                            class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-indigo-500 focus:outline-none focus:bg-gray-800 focus:text-indigo-500">
+                            @foreach ($categories as $category)
+                                <option class="" value="{{ $category->id }}">{{ $category->category_name }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                    <div class="flex flex-col mb-3">
                         <label for="description">Description<span class="text-red-600">*</span></label>
                         <textarea rows="4" id="description" name="description"
                             class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-indigo-500 focus:outline-none focus:bg-gray-800 focus:text-indigo-500">{{ old('description') }}</textarea>

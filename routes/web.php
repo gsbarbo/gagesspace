@@ -18,9 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'pages.home')->name('home');
 Route::view('/staticblog', 'pages.staticblog')->name('static.blog');
 
+Route::post('/blog/image_upload', [PostsController::class, 'image_upload'])->name('blog.image_upload');
+Route::get('/blog/category/{post_categories:category_slug}', [PostsController::class, 'category'])->name('blog.category');
+
 Route::resource('/blog', PostsController::class)
     ->parameters(['blog' => 'slug']);
-Route::post('/blog/image_upload', [PostsController::class, 'image_upload'])->name('blog.image_upload');
 
 Route::post('/send', [SendEmailController::class, 'send'])->name('send.email');
 

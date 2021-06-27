@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\PostStoreRequest;
 use App\Models\Post;
+use App\Models\PostCategory;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\RedirectResponse;
@@ -16,12 +17,15 @@ class PostsController extends Controller
     public function index(): View
     {
         $posts = Post::where('is_published', 1)->orderBy('updated_at', 'DESC')->get();
-        return view('posts.index', compact('posts'));
+        $categories = PostCategory::all();
+        $page_title = "Recent Posts";
+        return view('posts.index', compact('posts', 'categories', 'page_title'));
     }
 
     public function create(): View
     {
-        return view('posts.create');
+        $categories = PostCategory::all();
+        return view('posts.create', compact('categories'));
     }
 
     public function store(PostStoreRequest $request): RedirectResponse
@@ -44,6 +48,7 @@ class PostsController extends Controller
             'image_path' => $newImageName,
             'user_id' => auth()->user()->id,
             'is_published' => $is_published,
+            'category_id' => $request->input('category_id'),
         ]);
 
         return redirect()->route('blog.index')->with('success', 'Post Created!');
@@ -99,5 +104,14 @@ class PostsController extends Controller
         return response()->json([
             'url' => $image->getUrl('thumb'),
         ]);
+    }
+
+    public function category(PostCategory $post_categories)
+    {
+        $posts = Post::where('category_id', $post_categories->id)->orderBy('updated_at', 'DESC')->get();
+        $categories = PostCategory::all();
+        $page_title = "Recent " . $post_categories->category_name . " Posts";
+        return view('posts.index', compact('posts', 'categories', 'page_title'));
+
     }
 }
