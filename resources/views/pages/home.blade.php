@@ -165,6 +165,37 @@
                 </div>
             </div>
 
+            <div class="w-full p-4 lg:w-1/2">
+                <div class="relative w-full p-5 pb-16 rounded-lg bg-secondary">
+                    <h3 class="text-2xl font-semibold">Laravel Admin Template</h3>
+                    <div class="text-xs">
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-red-600 rounded-full">
+                            Laravel
+                        </button>
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-indigo-600 rounded-full">
+                            PHP
+                        </button>
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-green-600 rounded-full">
+                            TailwindCSS
+                        </button>
+                        <button type="button"
+                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-yellow-600 rounded-full">
+                            Open Source
+                        </button>
+                    </div>
+                    <p class="">An admin template for Laravel with Spatie Permissions and TailwindCSS. Also includes simple
+                        designed pages to manage roles, permissions and users. Will convert into a Composer Package once I
+                        figure that out.
+                    </p>
+                    <a href="https://github.com/gsbarbo/laravel-admin-template"
+                        class="absolute bottom-0 left-0 inline-block px-3 py-2 mb-5 ml-5 font-semibold text-black bg-gray-300 rounded-lg hover:bg-white">View
+                        Code</a>
+                </div>
+            </div>
+
         </div>
     </div>
 
