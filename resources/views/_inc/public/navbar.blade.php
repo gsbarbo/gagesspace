@@ -58,7 +58,13 @@
                         x-transition:leave-end="opacity-0 transform -translate-y-3">
                         <li><a href="#" class="block px-3 py-1 hover:bg-gray-600">Profile</a></li>
                         <li><a href="#" class="block px-3 py-1 hover:bg-gray-700">Admin</a></li>
-                        <li><a href="#" class="block px-3 py-1 border-t hover:bg-gray-700">Log out</a></li>
+                        <li>
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <a href="#" class="block px-3 py-1 border-t hover:bg-gray-700"
+                                    onclick="event.preventDefault(); this.closest('form').submit();">Log out</a>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             @endauth
