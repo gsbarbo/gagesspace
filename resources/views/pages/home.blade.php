@@ -39,7 +39,7 @@
     <div class="w-full px-3 py-6 mx-auto mt-8 md:px-0 md:w-4/5 lg:w-2/3" id="about">
         <h1 class="text-3xl font-bold text-indigo-600">About Me</h1>
         <div class="px-3 mt-3 md:flex">
-            <img src="{{ asset('images/me.png') }}" alt="Me!" class="block w-48 h-48 m-auto rounded-full md:mr-4">
+            <img src="{{ asset('images/gage.jpg') }}" alt="Me!" class="block w-48 h-48 m-auto rounded-full md:mr-4">
             <div class="text-sm">
                 <p class="my-2">It all started in 2013 when I tried out for a professional StarCraft 2 Team. I didn't make
                     the competitive team but did meet their web developer from New Zealand. He inspired me to learn the
