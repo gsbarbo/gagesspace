@@ -22,19 +22,21 @@
             </div>
 
             <div class="flex flex-wrap">
+                @auth
+                    @if (auth()->user()->id === 2)
+                        <div class="flex flex-wrap">
+                            <a href="{{ route('blog.edit', $post->slug) }}" class="px-3 py-2 m-3 bg-indigo-600">
+                                <i class="fas fa-edit"></i></a>
 
-                @if (auth()->user()->id === 2)
-                    <div class="flex flex-wrap">
-                        <a href="{{ route('blog.edit', $post->slug) }}" class="px-3 py-2 m-3 bg-indigo-600">
-                            <i class="fas fa-edit"></i></a>
+                            <form action="{{ route('blog.destroy', $post->slug) }}" method="POST" class="">
+                                @method('delete')
+                                @csrf
+                                <button type="submit" class="px-3 py-2 m-3 bg-indigo-600"><i class="fas fa-trash"></i></button>
+                            </form>
+                        </div>
+                    @endif
+                @endauth
 
-                        <form action="{{ route('blog.destroy', $post->slug) }}" method="POST" class="">
-                            @method('delete')
-                            @csrf
-                            <button type="submit" class="px-3 py-2 m-3 bg-indigo-600"><i class="fas fa-trash"></i></button>
-                        </form>
-                    </div>
-                @endif
 
                 <!-- Posts Section -->
                 <section class="flex flex-col items-center w-full px-3">
