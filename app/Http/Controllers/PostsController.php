@@ -19,7 +19,9 @@ class PostsController extends Controller
         $posts = Post::where('is_published', 1)->orderBy('updated_at', 'DESC')->get();
         $categories = PostCategory::all();
         $page_title = "Recent Posts";
-        return view('posts.index', compact('posts', 'categories', 'page_title'));
+        $featured_post = Post::where('is_featured', 1)->limit(1)->get()[0];
+
+        return view('blog.posts.index', compact('posts', 'categories', 'page_title', 'featured_post'));
     }
 
     public function create(): View
@@ -57,7 +59,9 @@ class PostsController extends Controller
     public function show(Post $slug): View
     {
         $post = $slug;
-        return view('posts.show', compact('post'));
+        $categories = PostCategory::all();
+
+        return view('posts.show', compact('post', 'categories'));
     }
 
     public function edit(Post $slug): View
@@ -109,9 +113,11 @@ class PostsController extends Controller
     public function category(PostCategory $post_categories)
     {
         $posts = Post::where('category_id', $post_categories->id)->orderBy('updated_at', 'DESC')->get();
+        $featured_post = Post::where('is_featured', 1)->limit(1)->get()[0];
+
         $categories = PostCategory::all();
-        $page_title = "Recent " . $post_categories->category_name . " Posts";
-        return view('posts.index', compact('posts', 'categories', 'page_title'));
+        $page_title = $post_categories->category_name . " Posts";
+        return view('blog.posts.index', compact('posts', 'categories', 'page_title', 'featured_post'));
 
     }
 }
