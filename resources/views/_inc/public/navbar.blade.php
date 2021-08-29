@@ -1,4 +1,4 @@
-<header id="top" class="fixed z-50 flex flex-col w-full bg-primary lg:relative pin-t pin-r pin-l"
+<header id="top" class="fixed top-0 right-0 z-50 flex flex-col w-full bg-primary lg:relative pin-t pin-r pin-l"
     x-data="{ mobileMenuOpen : false }">
     <nav id="site-menu"
         class="flex flex-col items-center justify-between w-full px-4 py-1 mx-auto shadow lg:w-4/5 bg-primary lg:flex-row lg:px-6 lg:shadow-none">
@@ -22,15 +22,17 @@
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">About</a>
             <a href="{{ route('home') }}#skills" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Skills</a>
+            <a href="{{ route('home') }}#services" @click="mobileMenuOpen = false"
+                class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Services</a>
             <a href="{{ route('home') }}#projects" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Projects</a>
             <a href="{{ route('home') }}#contact" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Contact</a>
-            <a href="{{ route('blog.index') }}" @click="mobileMenuOpen = false"
+            {{-- <a href="{{ route('blog.index') }}" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Blog</a>
             <a href="#" @click="mobileMenuOpen = false"
-                class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Docs</a>
-            @guest
+                class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Docs</a> --}}
+            {{-- @guest
                 <a href="{{ route('login') }}" @click="mobileMenuOpen = false"
                     class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Login</a>
                 <a href="{{ route('register') }}" @click="mobileMenuOpen = false"
@@ -67,7 +69,7 @@
                         </li>
                     </ul>
                 </div>
-            @endauth
+            @endauth --}}
         </div>
     </nav>
 </header>

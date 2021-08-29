@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="w-full px-3 py-6 mx-auto mt-8 text-center md:px-0 md:w-4/5 lg:w-2/3">
+    <div class="w-full px-3 py-6 mx-auto mt-10 text-center md:w-4/5 lg:w-2/3">
         <h1 class="font-bold uppercase text-7xl">I Am Gage</h1>
         <h2 class="text-4xl font-bold text-indigo-600 uppercase">Web Developer</h2>
         <p class="mt-8 text-lg">
@@ -36,63 +36,282 @@
         </div>
     </div>
 
-    <div class="w-full px-3 py-6 mx-auto mt-8 md:px-0 md:w-4/5 lg:w-2/3" id="about">
-        <h1 class="text-3xl font-bold text-indigo-600">About Me</h1>
-        <div class="px-3 mt-3 md:flex">
-            <img src="{{ asset('images/gage.jpg') }}" alt="Me!" class="block w-48 h-48 m-auto rounded-full md:mr-4">
-            <div class="text-sm">
-                <p class="my-2">It all started in 2013 when I tried out for a professional StarCraft 2 Team. I didn't make
-                    the competitive team but did meet their web developer from New Zealand. He inspired me to learn the
-                    website and to grow my knowledge. Little did I know it would lead to a life long passion.</p>
-                <p class="my-2">My Senior year in high school I created my first public website for an actual client, a
-                    thrift shop in my local town. This was my first major project. The website needed to have a CMS (Content
-                    Management System) that way she could update the website. Even though this website didn't last long I
-                    learned a great deal about web development by trial and error.</p>
-                <p class="my-2">Present day I haven't expanded my client base very much. I have continued my learning with
-                    eSports organizations websites and FiveM communities. These communities/organizations come and go
-                    without much thought. I am now starting to build my own portfolio with different open source web
-                    applications. To do this I am looking for more real life clients to get their business online in a world
-                    changed due to COVID19.</p>
-                <p class="my-2">If you are interested in working with me on your next online project feel free to message me
-                    using the form below. I do have a full time overnight job but I will email you back with a time and date
-                    that we can have a phone call. If you're not convinced check out my projects below!</p>
+    <section class="text-gray-600 body-font">
+
+        <div class="container flex flex-col px-5 py-24 mx-auto">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold text-indigo-600">About Me</h1>
+                <div class="flex justify-center mt-6">
+                    <div class="inline-flex w-24 h-1 bg-indigo-500 rounded-full"></div>
+                </div>
+            </div>
+            <div class="mx-auto lg:w-4/6">
+                <div class="flex flex-col mt-10 sm:flex-row">
+                    <div class="text-center sm:w-1/3 sm:pr-8 sm:py-8">
+                        <div
+                            class="inline-flex items-center justify-center w-32 h-32 text-gray-400 bg-gray-200 rounded-full">
+                            <img src="{{ asset('images/gage.jpg') }}" alt="Me!" class="rounded-full">
+
+                        </div>
+                        <div class="flex flex-col items-center justify-center text-center">
+                            <h2 class="mt-4 text-2xl font-semibold">Gage Barbour</h2>
+                            <div class="w-12 h-1 mt-2 mb-4 bg-indigo-500 rounded"></div>
+                            <p class="text-base italic">“There are three responses to a piece of design – yes, no, and WOW!
+                                Wow is the one to aim for.” - Milton Glaser</p>
+                        </div>
+                    </div>
+                    <div
+                        class="pt-4 mt-4 text-center border-t border-gray-200 sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l sm:border-t-0 sm:mt-0 sm:text-left">
+                        <p class="mb-2 leading-relaxed">It all started in 2013 when I tried out for a professional StarCraft
+                            2 Team. I didn't make the competitive team but did meet their web developer from New Zealand. He
+                            inspired me to learn the website and to grow my knowledge. Little did I know it would lead to a
+                            life long passion. </p>
+                        <p class="mb-2 leading-relaxed">My Senior year in high school I created my first public website for
+                            an actual client, a thrift shop in my local town. This was my first major project. The website
+                            needed to have a CMS (Content Management System) that way she could update the website. Even
+                            though this website didn't last long I learned a great deal about web development by trial and
+                            error.</p>
+                        <p class="mb-2 leading-relaxed">Present day I haven't expanded my client base very much. I
+                            have continued my learning with eSports organizations websites and FiveM communities. These
+                            communities/organizations come and go without much thought. I am now starting to build my own
+                            portfolio with different open source web applications. To do this I am looking for more real
+                            life clients to get their business online in
+                            a world changed due to COVID19.</p>
+                        <p class="mb-2 leading-relaxed">If you are interested in working with me on your next online project
+                            feel free to message me using the form below. I do have a full time overnight job but I will
+                            email you back with a time and date that we can have a phone call. If you're not convinced check
+                            out my projects below!</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="w-full px-3 py-6 mx-auto mt-8 md:px-0 md:w-4/5 lg:w-2/3" id="skills">
-        <h1 class="text-3xl font-bold text-indigo-600">Skills</h1>
-        <div class="flex flex-wrap justify-between px-3 mt-3 md:flex-row">
-
-            <div>
-                <h3 class="text-2xl font-semibold">Frontend</h3>
-                <ul class="ml-5 text-base">
-                    <li class="skill-item">HTML, CSS, SASS</li>
-                    <li class="skill-item">Bootstrap V4 & V5</li>
-                    <li class="skill-item">Tailwind CSS</li>
-                </ul>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 pb-24 mx-auto">
+            <div class="mb-20 text-center">
+                <h1 class="text-3xl font-bold text-indigo-600">Skills</h1>
+                <div class="flex justify-center mt-6">
+                    <div class="inline-flex w-24 h-1 bg-indigo-500 rounded-full"></div>
+                </div>
             </div>
+            <div class="flex flex-wrap mx-auto -m-4">
+                <div class="w-full p-4 text-center lg:w-1/4 sm:w-1/2">
+                    <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">
+                        Front End</h2>
+                    <nav class="flex flex-col items-center -mb-1 space-y-2.5">
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>TailwindCSS
+                        </a>
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>Bootstrap 5
+                        </a>
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>HTML 5
+                        </a>
+                    </nav>
+                </div>
 
-            <div>
-                <h3 class="text-2xl">Backend</h3>
-                <ul class="ml-5 text-base">
-                    <li class="skill-item">PHP</li>
-                    <li class="skill-item">Codeigniter</li>
-                    <li class="skill-item">Laravel</li>
-                </ul>
+                <div class="w-full p-4 text-center lg:w-1/4 sm:w-1/2">
+                    <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">
+                        Back End</h2>
+                    <nav class="flex flex-col items-center -mb-1 space-y-2.5">
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>PHP
+                        </a>
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>Laravel
+                        </a>
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>Codeigniter
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="w-full p-4 text-center lg:w-1/4 sm:w-1/2">
+                    <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">
+                        Coding</h2>
+                    <nav class="flex flex-col items-center -mb-1 space-y-2.5">
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>VS Code
+                        </a>
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>GIT/Github
+                        </a>
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>Livewire
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="w-full p-4 text-center lg:w-1/4 sm:w-1/2">
+                    <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">
+                        Photography</h2>
+                    <nav class="flex flex-col items-center -mb-1 space-y-2.5">
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>High School Sports
+                        </a>
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>Outside Photo Shoots
+                        </a>
+                        <a>
+                            <span
+                                class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                    <path d="M20 6L9 17l-5-5"></path>
+                                </svg>
+                            </span>Photoshop
+                        </a>
+                    </nav>
+                </div>
+
             </div>
-
-            <div>
-                <h3 class="text-2xl">Other</h3>
-                <ul class="ml-5 text-base">
-                    <li class="skill-item">Laravel Livewire</li>
-                    <li class="skill-item">Git</li>
-                    <li class="skill-item">VSCode</li>
-                </ul>
-            </div>
-
         </div>
-    </div>
+    </section>
+
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 pb-24 mx-auto">
+            <div class="mb-20 text-center">
+                <h1 class="text-3xl font-bold text-indigo-600">Services</h1>
+                <p class="mx-auto text-base leading-relaxed xl:w-2/4 lg:w-3/4 text-gray-500s">This is just some of the
+                    services I offer. If you have any questions or need something not on this list don't hesitate to contact
+                    me! Examples of services coming soon.</p>
+                <div class="flex justify-center mt-6">
+                    <div class="inline-flex w-16 h-1 bg-indigo-500 rounded-full"></div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4 -mt-4 -mb-10 space-y-6 sm:-m-4 md:space-y-0">
+                <div class="flex flex-col items-center p-4 text-center md:w-1/3">
+                    <div
+                        class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mb-5 text-indigo-500 bg-indigo-900 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">Website
+                            Design
+                        </h2>
+                        <p class="text-base leading-relaxed">Weather it be a static website or a full CMS, I have created
+                            several of each type. I can create one from the ground up or make edits to your current website.
+                        </p>
+                        {{-- <a class="inline-flex items-center mt-3 text-indigo-500">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a> --}}
+                    </div>
+                </div>
+                <div class="flex flex-col items-center p-4 text-center md:w-1/3">
+                    <div
+                        class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mb-5 text-indigo-500 bg-indigo-900 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">Web Application
+                        </h2>
+                        <p class="text-base leading-relaxed">More than a website! Need a schedule system for your employees?
+                            Check! Need a support ticket system to track renter issues? Check! Web Applications can be
+                            used to make your life easier!</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center p-4 text-center md:w-1/3">
+                    <div
+                        class="inline-flex items-center justify-center flex-shrink-0 w-20 h-20 mb-5 text-indigo-500 bg-indigo-900 rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <div class="flex-grow">
+                        <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">Photography <span
+                                class="text-xs text-red-400">NEW</span></h2>
+                        <p class="text-base leading-relaxed">A new service of mine. I have 3 years of experiance at high
+                            school sporting events with my brother and sister. Some of my pictures will be available soon!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="w-full px-3 py-6 mx-auto mt-8 lg:px-0 md:w-4/5 lg:w-2/3" id="projects">
         <h1 class="text-3xl font-bold text-indigo-600">Projects</h1>
