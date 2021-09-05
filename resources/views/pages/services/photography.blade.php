@@ -27,7 +27,7 @@
         </div>
     </section>
 
-    <section class="py-12 text-gray-400 body-font" id="works">
+    <section class="py-12 text-gray-400 body-font" id="pictures">
         <div class="container px-5 mx-auto">
             <div class="flex flex-wrap w-full mb-5">
                 <div class="w-full mb-6 lg:w-1/2 lg:mb-0">
