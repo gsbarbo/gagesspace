@@ -480,8 +480,8 @@
                                 <label for="captcha" class="block leading-7 text-indigo-600">Captcha</label>
                                 <p class="py-2 text-sm">To protect against spam please answer the following question:</p>
                                 <span>2 + 8 = </span>
-                                <input id="captcha" name="captcha"
-                                    class="w-1/12 px-3 py-1 text-base leading-8 text-gray-300 transition-colors duration-200 ease-in-out bg-gray-900 bg-opacity-50 border border-indigo-300 rounded outline-none focus:border-indigo-500 focus:bg-gray-700 focus:ring-2 focus:ring-indigo-200">
+                                <input id="captcha" name="captcha" type="text" maxlength="2" size="2"
+                                    class="px-3 py-1 text-base leading-8 text-gray-300 transition-colors duration-200 ease-in-out bg-gray-900 bg-opacity-50 border border-indigo-300 rounded outline-none focus:border-indigo-500 focus:bg-gray-700 focus:ring-2 focus:ring-indigo-200">
                             </div>
                         </div>
 
