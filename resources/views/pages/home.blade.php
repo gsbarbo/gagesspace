@@ -329,6 +329,13 @@
                         <p class="text-base leading-relaxed">A new service of mine. I have 3 years of experiance at high
                             school sporting events with my brother and sister. Some of my pictures will be available soon!
                         </p>
+                        <a class="inline-flex items-center text-lg text-indigo-600 cursor-pointer hover:underline"
+                            href="{{ route('services.photography') }}">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>

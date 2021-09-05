@@ -2,7 +2,6 @@
 
 @section('content')
 
-
     <section class="py-12 text-gray-400 body-font">
         <div class="container flex flex-col items-center px-5 mx-auto md:flex-row">
             <div
