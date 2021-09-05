@@ -16,9 +16,9 @@
         <div id="menu" @click.away="mobileMenuOpen = false"
             :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}"
             class="flex-col items-center self-end hidden w-full h-full py-1 pb-4 pl-10 lg:w-auto lg:self-center lg:flex lg:flex-row lg:py-0 lg:pb-0">
-            <a href="{{ route('home') }}" @click="mobileMenuOpen = false"
-                class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Home</a>
             <a href="{{ route('home') }}#top" @click="mobileMenuOpen = false"
+                class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Home</a>
+            <a href="{{ route('home') }}#about" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">About</a>
             <a href="{{ route('home') }}#skills" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Skills</a>

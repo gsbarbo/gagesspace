@@ -3,3 +3,7 @@
 <p>{{ $form_data['name'] }}</p>
 <p>{{ $form_data['email'] }}</p>
 <p>{{ $form_data['message'] }}</p>
+
+**
+
+<p>{{ $form_data['captcha'] }}</p>

@@ -36,9 +36,9 @@
         </div>
     </div>
 
-    <section class="text-gray-600 body-font">
+    <section class="py-12 text-gray-600 body-font" id="about">
 
-        <div class="container flex flex-col px-5 py-24 mx-auto">
+        <div class="container flex flex-col px-5 mx-auto">
             <div class="text-center">
                 <h1 class="text-3xl font-bold text-indigo-600">About Me</h1>
                 <div class="flex justify-center mt-6">
@@ -71,24 +71,37 @@
                             needed to have a CMS (Content Management System) that way she could update the website. Even
                             though this website didn't last long I learned a great deal about web development by trial and
                             error.</p>
-                        <p class="mb-2 leading-relaxed">Present day I haven't expanded my client base very much. I
+
+                        <a onclick="show_full_about()" id="read_more"
+                            class="text-lg text-indigo-600 cursor-pointer hover:underline">Read
+                            More...</a>
+
+                        <p id="" class="hidden mb-2 leading-relaxed hidden_about">Present day I haven't expanded my client
+                            base very much. I
                             have continued my learning with eSports organizations websites and FiveM communities. These
                             communities/organizations come and go without much thought. I am now starting to build my own
                             portfolio with different open source web applications. To do this I am looking for more real
                             life clients to get their business online in
                             a world changed due to COVID19.</p>
-                        <p class="mb-2 leading-relaxed">If you are interested in working with me on your next online project
+                        <p id="" class="hidden mb-2 leading-relaxed hidden_about">If you are interested in working with me
+                            on
+                            your next online
+                            project
                             feel free to message me using the form below. I do have a full time overnight job but I will
                             email you back with a time and date that we can have a phone call. If you're not convinced check
                             out my projects below!</p>
+
+                        <a onclick="hide_full_about()" id="hide_more"
+                            class="hidden text-lg text-indigo-600 cursor-pointer hover:underline hidden_about">Hide Full
+                            About...</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 pb-24 mx-auto">
+    <section class="py-12 text-gray-600 body-font" id="skills">
+        <div class="container px-5 mx-auto">
             <div class="mb-20 text-center">
                 <h1 class="text-3xl font-bold text-indigo-600">Skills</h1>
                 <div class="flex justify-center mt-6">
@@ -237,8 +250,8 @@
     </section>
 
 
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 pb-24 mx-auto">
+    <section class="py-12 text-gray-600 body-font" id="services">
+        <div class="container px-5 mx-auto">
             <div class="mb-20 text-center">
                 <h1 class="text-3xl font-bold text-indigo-600">Services</h1>
                 <p class="mx-auto text-base leading-relaxed xl:w-2/4 lg:w-3/4 text-gray-500s">This is just some of the
@@ -302,8 +315,9 @@
                         </svg>
                     </div>
                     <div class="flex-grow">
-                        <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">Photography <span
-                                class="text-xs text-red-400">NEW</span></h2>
+                        <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">Photography
+                            <span class="text-xs text-red-400">NEW</span>
+                        </h2>
                         <p class="text-base leading-relaxed">A new service of mine. I have 3 years of experiance at high
                             school sporting events with my brother and sister. Some of my pictures will be available soon!
                         </p>
@@ -313,157 +327,191 @@
         </div>
     </section>
 
-    <div class="w-full px-3 py-6 mx-auto mt-8 lg:px-0 md:w-4/5 lg:w-2/3" id="projects">
-        <h1 class="text-3xl font-bold text-indigo-600">Projects</h1>
-        <div class="flex flex-col mt-3 lg:flex-wrap lg:justify-between lg:flex-row">
+    <section class="py-12 text-gray-400 body-font" id="projects">
+        <div class="container px-5 mx-auto">
+            <div class="mb-20 text-center">
+                <h1 class="text-3xl font-bold text-indigo-600">Projects</h1>
+                <p class="mx-auto text-base leading-relaxed xl:w-2/4 lg:w-3/4 text-gray-500s">This is just some of the
+                    projects that I have completed. This is not a complete list, just what I can publicy share the source
+                    code.</p>
+                <div class="flex justify-center mt-6">
+                    <div class="inline-flex w-16 h-1 bg-indigo-500 rounded-full"></div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 xl:w-1/3 md:w-1/2">
+                    <div class="p-6 border border-gray-700 border-opacity-75 rounded-lg">
+                        <div
+                            class="inline-flex items-center justify-center w-10 h-10 mb-4 text-indigo-400 bg-gray-800 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                        <h2 class="mb-2 text-lg font-semibold text-indigo-600 title-font">FiveM CAD/MDT System
+                            <span class="text-xs text-red-400">WIP</span>
+                        </h2>
+                        <p class="text-base leading-relaxed">This is a police type CAD/MDT system for roleplay communities.
+                            This is a work in progress to open source it. It includes everything from applications to
+                            whitelisting while still a fully functional MDT!</p>
+                        <div class="flex justify-between my-2">
+                            <a href="https://github.com/gsbarbo/Fivem-Cad" target="_blank"
+                                class="text-lg text-indigo-600 cursor-pointer hover:underline">Github</a>
 
-            <div class="w-full p-4 lg:w-1/2">
-                <div class="relative w-full p-5 pb-16 rounded-lg bg-secondary">
-                    <h3 class="text-2xl font-semibold">FiveM CAD/MDT System</h3>
-                    <div class="text-xs">
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-red-600 rounded-full">
-                            Laravel
-                        </button>
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-indigo-600 rounded-full">
-                            PHP
-                        </button>
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-green-600 rounded-full">
-                            TailwindCSS
-                        </button>
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-yellow-600 rounded-full">
-                            Open Source
-                        </button>
+                            <a href="https://cadv4.gagesspace.dev/" target="_blank"
+                                class="text-lg text-indigo-600 cursor-pointer hover:underline">Demo</a>
+                        </div>
                     </div>
-                    <p class="">
-                        This is a police type CAD/MDT system for roleplay communities. This is a work in progress to open
-                        source it. It includes everything from applications to whitelisting while still a fully functional
-                        MDT!
-                    </p>
-                    <div class="absolute inset-x-0 bottom-0">
-                        <a href="https://github.com/gsbarbo/Fivem-Cad"
-                            class="inline-block px-3 py-2 mb-5 ml-5 font-semibold text-black bg-gray-300 rounded-lg hover:bg-white">View
-                            Code</a>
-                        {{-- <a href="#"
-                            class="inline-block px-3 py-2 mb-5 ml-5 font-semibold text-black bg-gray-300 rounded-lg hover:bg-white">Preview</a> --}}
+                </div>
+                <div class="p-4 xl:w-1/3 md:w-1/2">
+                    <div class="p-6 border border-gray-700 border-opacity-75 rounded-lg">
+                        <div
+                            class="inline-flex items-center justify-center w-10 h-10 mb-4 text-indigo-400 bg-gray-800 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                            </svg>
+                        </div>
+                        <h2 class="mb-2 text-lg font-semibold text-indigo-600 title-font">Laravel Admin Template
+                        </h2>
+                        <p class="text-base leading-relaxed">An admin template for Laravel with Spatie Permissions and
+                            TailwindCSS. Also includes simple designed pages to manage roles, permissions and users.
+                            Currently working to make into a NPM package.</p>
+                        <div class="flex justify-between my-2">
+                            <a href="https://github.com/gsbarbo/laravel-admin-template" target="_blank"
+                                class="text-lg text-indigo-600 cursor-pointer hover:underline">Github</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 xl:w-1/3 md:w-1/2">
+                    <div class="p-6 border border-gray-700 border-opacity-75 rounded-lg">
+                        <div
+                            class="inline-flex items-center justify-center w-10 h-10 mb-4 text-indigo-400 bg-gray-800 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                            </svg>
+                        </div>
+                        <h2 class="mb-2 text-lg font-semibold text-indigo-600 title-font">Gage's Space Website
+                        </h2>
+                        <p class="text-base leading-relaxed">New and improved website for Gage's Space. Will feature a blog
+                            and documention for my projects. Be sure to look around and fell free to use
+                            the contact form on the bottom to reach me!</p>
+                        <div class="flex justify-between my-2">
+                            <a href="https://github.com/gsbarbo/gagesspace" target="_blank"
+                                class="text-lg text-indigo-600 cursor-pointer hover:underline">Github</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="w-full p-4 lg:w-1/2">
-                <div class="relative w-full p-5 pb-16 rounded-lg bg-secondary">
-                    <h3 class="text-2xl font-semibold">This Website!</h3>
-                    <div class="text-xs">
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-red-600 rounded-full">
-                            Laravel
-                        </button>
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-indigo-600 rounded-full">
-                            PHP
-                        </button>
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-green-600 rounded-full">
-                            TailwindCSS
-                        </button>
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-yellow-600 rounded-full">
-                            Open Source
-                        </button>
-                    </div>
-                    <p class="">New and improved website for Gage's Space. Will feature a blog section as well as all docs
-                        for my other projects. Be sure to look around and fell free to use the contact form on the bottom to
-                        reach me!
-                    </p>
-                    <a href="https://github.com/gsbarbo/gagesspace"
-                        class="absolute bottom-0 left-0 inline-block px-3 py-2 mb-5 ml-5 font-semibold text-black bg-gray-300 rounded-lg hover:bg-white">View
-                        Code</a>
-                </div>
-            </div>
-
-            <div class="w-full p-4 lg:w-1/2">
-                <div class="relative w-full p-5 pb-16 rounded-lg bg-secondary">
-                    <h3 class="text-2xl font-semibold">Laravel Admin Template</h3>
-                    <div class="text-xs">
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-red-600 rounded-full">
-                            Laravel
-                        </button>
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-indigo-600 rounded-full">
-                            PHP
-                        </button>
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-green-600 rounded-full">
-                            TailwindCSS
-                        </button>
-                        <button type="button"
-                            class="inline-block p-2 px-4 m-2 leading-none text-white bg-yellow-600 rounded-full">
-                            Open Source
-                        </button>
-                    </div>
-                    <p class="">An admin template for Laravel with Spatie Permissions and TailwindCSS. Also includes simple
-                        designed pages to manage roles, permissions and users. Will convert into a Composer Package once I
-                        figure that out.
-                    </p>
-                    <a href="https://github.com/gsbarbo/laravel-admin-template"
-                        class="absolute bottom-0 left-0 inline-block px-3 py-2 mb-5 ml-5 font-semibold text-black bg-gray-300 rounded-lg hover:bg-white">View
-                        Code</a>
-                </div>
-            </div>
-
         </div>
-    </div>
+    </section>
 
+    <section class="relative py-12 text-gray-600 body-font" id="contact">
+        <div class="container px-5 mx-auto">
+            <div class="mb-12 text-center">
+                <h1 class="text-3xl font-bold text-indigo-600">Contact Me!</h1>
+                <p class="mx-auto text-base leading-relaxed xl:w-2/4 lg:w-3/4 text-gray-500s">
+                    Send me an email today to see how I can help you grow your online presence!</p>
+                <div class="flex justify-center mt-6">
+                    <div class="inline-flex w-16 h-1 bg-indigo-500 rounded-full"></div>
+                </div>
+            </div>
+            <div class="mx-auto lg:w-1/2 md:w-2/3">
+                <form action="{{ route('send.email') }}" method="POST">
+                    @if ($errors->any())
+                        <div class="___class_+?141___">
+                            <div class="font-medium text-red-600 ">
+                                {{ __('Whoops! Something went wrong.') }}
+                            </div>
 
-    <div class="w-full px-3 py-6 mx-auto mt-8 lg:px-0 md:w-4/5 lg:w-2/3" id="contact">
-        <h1 class="text-3xl font-bold text-indigo-600">Contact Me</h1>
+                            <ul class="mt-3 text-sm text-red-600 list-disc list-inside">
+                                @foreach ($errors->all() as $error)
+                                    <li class="text-red-600">{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    @csrf
+                    <div class="flex flex-wrap -m-2">
 
-        <form action="{{ route('send.email') }}" method="POST" class="w-full p-6 rounded-lg bg-secondary ">
-            @if ($errors->any())
-                <div class="">
-                    <div class="font-medium text-red-600 ">
-                        {{ __('Whoops! Something went wrong.') }}
+                        <div class="w-1/2 p-2">
+                            <div class="relative">
+                                <label for="name" class="leading-7 text-indigo-600">Name</label>
+                                <input type="text" id="name" name="name" value="{{ old('name') }}"
+                                    class="w-full px-3 py-1 text-base leading-8 text-gray-300 transition-colors duration-200 ease-in-out bg-gray-900 bg-opacity-50 border border-indigo-300 rounded outline-none focus:border-indigo-500 focus:bg-gray-700 focus:ring-2 focus:ring-indigo-200">
+                            </div>
+                        </div>
+                        <div class="w-1/2 p-2">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-indigo-600">Email</label>
+                                <input type="email" id="email" name="email" value="{{ old('email') }}"
+                                    class="w-full px-3 py-1 text-base leading-8 text-gray-300 transition-colors duration-200 ease-in-out bg-gray-900 bg-opacity-50 border border-indigo-300 rounded outline-none focus:border-indigo-500 focus:bg-gray-700 focus:ring-2 focus:ring-indigo-200">
+                            </div>
+                        </div>
+                        <div class="w-full p-2">
+                            <div class="relative">
+                                <label for="message" class="leading-7 text-indigo-600">Message</label>
+                                <textarea id="message" name="message" oncopy="return false" onpaste="return false"
+                                    class="w-full h-32 px-3 py-1 text-base leading-8 text-gray-300 transition-colors duration-200 ease-in-out bg-gray-900 bg-opacity-50 border border-indigo-300 rounded outline-none focus:border-indigo-500 focus:bg-gray-700 focus:ring-2 focus:ring-indigo-200">{{ old('message') }}</textarea>
+                            </div>
+                        </div>
+
+                        <div class="w-full p-2">
+                            <div class="relative">
+                                <label for="captcha" class="block leading-7 text-indigo-600">Captcha</label>
+                                <p class="py-2 text-sm">To protect against spam please answer the following question:</p>
+                                <span>2 + 8 = </span>
+                                <input id="captcha" name="captcha"
+                                    class="w-1/12 px-3 py-1 text-base leading-8 text-gray-300 transition-colors duration-200 ease-in-out bg-gray-900 bg-opacity-50 border border-indigo-300 rounded outline-none focus:border-indigo-500 focus:bg-gray-700 focus:ring-2 focus:ring-indigo-200">
+                            </div>
+                        </div>
+
+                        <div class="w-full p-2">
+                            <button
+                                class="flex px-8 py-2 mx-auto text-lg text-white bg-indigo-600 border-0 rounded focus:outline-none hover:bg-indigo-800">Send</button>
+                        </div>
+                        <div class="w-full p-2 pt-8 mt-8 text-center border-t border-gray-200">
+                            <a class="text-indigo-500 hover:underline"
+                                href="mailto:gagesspace@outlook.com">gagesspace@outlook.com</a>
+                            <br>
+                            <a class="text-indigo-500 hover:underline"
+                                href="mailto:hello@gages.space">hello@gages.space</a>
+                        </div>
                     </div>
+                </form>
 
-                    <ul class="mt-3 text-sm text-red-600 list-disc list-inside">
-                        @foreach ($errors->all() as $error)
-                            <li class="text-red-600">{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
-            @csrf
-            <div>
-                <div class="flex flex-col mb-3">
-                    <label for="name">Name<span class="text-red-600">*</span></label>
-                    <input type="text" id="name" name="name" value="{{ old('name') }}"
-                        class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-indigo-500 focus:outline-none focus:bg-gray-800 focus:text-indigo-500"
-                        autocomplete="off">
-                </div>
-                <div class="flex flex-col mb-3">
-                    <label for="email">Email<span class="text-red-600">*</span></label>
-                    <input type="text" id="email" name="email" value="{{ old('email') }}"
-                        class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-indigo-500 focus:outline-none focus:bg-gray-800 focus:text-indigo-500"
-                        autocomplete="off">
-                </div>
-                <div class="flex flex-col mb-3">
-                    <label for="message">Message<span class="text-red-600">*</span></label>
-                    <textarea rows="4" id="message" name="message"
-                        class="px-3 py-2 bg-gray-800 border border-gray-900 focus:border-indigo-500 focus:outline-none focus:bg-gray-800 focus:text-indigo-500">{{ old('message') }}</textarea>
-                </div>
             </div>
-            <div class="w-full pt-3">
-                <button type="submit"
-                    class="w-full px-4 py-2 text-xl font-semibold transition bg-gray-900 border border-indigo-500 cursor-pointer duration-50 focus:outline-none hover:bg-indigo-500 hover:text-white">
-                    Send
-                </button>
-            </div>
-        </form>
-    </div>
+        </div>
+    </section>
+
+    <script>
+        const hidden_divs = document.getElementsByClassName("hidden_about");
+        const read_more = document.getElementById('read_more');
+        const hide_more = document.getElementById('hide_more');
+
+        function show_full_about() {
+
+
+            for (var i = 0; i < hidden_divs.length; i++) {
+                hidden_divs[i].classList.remove('hidden');
+            }
+
+            read_more.classList.add('hidden');
+
+        }
+
+        function hide_full_about() {
+            for (var i = 0; i < hidden_divs.length; i++) {
+                hidden_divs[i].classList.add('hidden');
+            }
+
+            read_more.classList.remove('hidden');
+        }
+    </script>
 
 
 @endsection

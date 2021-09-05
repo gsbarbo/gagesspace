@@ -26,7 +26,8 @@ class EmailRequest extends FormRequest
         return [
             'name' => 'required',
             'email' => 'required|email',
-            'message' => 'required|min:40|max:2000',
+            'message' => 'required|min:20|max:2000',
+            'captcha' => 'required|integer|size:10',
         ];
     }
 }
