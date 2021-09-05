@@ -249,7 +249,6 @@
         </div>
     </section>
 
-
     <section class="py-12 text-gray-600 body-font" id="services">
         <div class="container px-5 mx-auto">
             <div class="mb-20 text-center">
@@ -278,12 +277,13 @@
                         <p class="text-base leading-relaxed">Weather it be a static website or a full CMS, I have created
                             several of each type. I can create one from the ground up or make edits to your current website.
                         </p>
-                        {{-- <a class="inline-flex items-center mt-3 text-indigo-500">Learn More
+                        <a class="inline-flex items-center text-lg text-indigo-600 cursor-pointer hover:underline"
+                            href="{{ route('services.webdesign') }}">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
-                        </a> --}}
+                        </a>
                     </div>
                 </div>
                 <div class="flex flex-col items-center p-4 text-center md:w-1/3">
@@ -298,9 +298,17 @@
                     <div class="flex-grow">
                         <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">Web Application
                         </h2>
-                        <p class="text-base leading-relaxed">More than a website! Need a schedule system for your employees?
+                        <p class="text-base leading-relaxed">More than a website! Need a schedule system for your
+                            employees?
                             Check! Need a support ticket system to track renter issues? Check! Web Applications can be
                             used to make your life easier!</p>
+                        <a class="inline-flex items-center text-lg text-indigo-600 cursor-pointer hover:underline"
+                            href="{{ route('services.webapp') }}">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
                 <div class="flex flex-col items-center p-4 text-center md:w-1/3">
