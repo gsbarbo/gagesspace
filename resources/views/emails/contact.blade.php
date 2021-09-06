@@ -6,4 +6,6 @@
 
 **
 
-<p>{{ $form_data['captcha'] }}</p>
+<p>Captcha: {{ $form_data['captcha'] }}</p>
+<p>IP: {{ $from_ip }}</p>
+<p>Send Time: {{ date('Y-m-d H:m:i', time()) }}</p>

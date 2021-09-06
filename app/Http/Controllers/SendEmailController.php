@@ -10,7 +10,7 @@ class SendEmailController extends Controller
 {
     public function send(EmailRequest $request)
     {
-        Mail::to(['gagesspace@outlook.com', 'hello@gages.space'])->send(new ContactSubmitted($request->validated()));
+        Mail::to(['gagesspace@outlook.com', 'hello@gages.space'])->send(new ContactSubmitted($request->validated(), $request->ip()));
 
         return redirect()->route('home')->with('success', 'Email Sent!');
     }

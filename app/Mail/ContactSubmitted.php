@@ -11,14 +11,16 @@ class ContactSubmitted extends Mailable
     use Queueable, SerializesModels;
 
     public $form_data;
+    public $from_ip;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct($data, $ip)
     {
         $this->form_data = $data;
+        $this->from_ip = $ip;
     }
 
     /**
