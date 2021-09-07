@@ -279,7 +279,7 @@
                             several of each type. I can create one from the ground up or make edits to your current website.
                         </p>
                         <a class="inline-flex items-center text-lg text-indigo-600 cursor-pointer hover:underline"
-                            href="{{ route('services.webdesign') }}">Learn More
+                            href="{{ route('services.webdesign') }}">My Web Design Work
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -304,7 +304,7 @@
                             Check! Need a support ticket system to track renter issues? Check! Web Applications can be
                             used to make your life easier!</p>
                         <a class="inline-flex items-center text-lg text-indigo-600 cursor-pointer hover:underline"
-                            href="{{ route('services.webapp') }}">Learn More
+                            href="{{ route('services.webapp') }}">My Web Apps Work
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -331,7 +331,7 @@
                             school sporting events with my brother and sister. Some of my pictures will be available soon!
                         </p>
                         <a class="inline-flex items-center text-lg text-indigo-600 cursor-pointer hover:underline"
-                            href="{{ route('services.photography') }}">Learn More
+                            href="{{ route('services.photography') }}">My Photography Work
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
