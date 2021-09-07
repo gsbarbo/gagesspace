@@ -215,8 +215,8 @@
                 <div class="w-full p-4 text-center lg:w-1/4 sm:w-1/2">
                     <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">
                         Photography</h2>
-                    <nav class="flex flex-col items-center -mb-1 space-y-2.5">
-                        <a>
+                    <div class="flex flex-col items-center -mb-1 space-y-2.5">
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -224,8 +224,8 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>High School Sports
-                        </a>
-                        <a>
+                        </p>
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -233,8 +233,8 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>Outside Photo Shoots
-                        </a>
-                        <a>
+                        </p>
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -242,8 +242,8 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>Photoshop
-                        </a>
-                    </nav>
+                        </p>
+                    </div>
                 </div>
 
             </div>
