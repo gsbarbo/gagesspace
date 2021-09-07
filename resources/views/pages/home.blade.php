@@ -19,16 +19,16 @@
                     <i class="mr-2 text-white fas fa-envelope-open-text"></i>
                     Contact
                 </a>
-                <a href="https://github.com/gsbarbo"
+                <a href="https://github.com/gsbarbo" rel="noopener"
                     class="block px-3 py-2 my-2 mr-3 sm:inline-block bg-secondary hover:bg-indigo-700 rounded-2xl">
                     <i class="mr-2 text-white fab fa-github"></i>Github
                 </a>
-                <a href="https://www.facebook.com/gagesspace"
+                <a href="https://www.facebook.com/gagesspace" rel="noopener"
                     class="block px-3 py-2 my-2 mr-3 sm:inline-block bg-secondary hover:bg-indigo-700 rounded-2xl">
                     <i class="mr-2 text-white fab fa-facebook-square"></i>
                     Facebook
                 </a>
-                <a href="https://www.instagram.com/gagesspace/"
+                <a href="https://www.instagram.com/gagesspace/" rel="noopener"
                     class="block px-3 py-2 my-2 mr-3 sm:inline-block bg-secondary hover:bg-indigo-700 rounded-2xl">
                     <i class="mr-2 text-white fab fa-instagram"></i>Instagram
                 </a>
@@ -50,7 +50,8 @@
                     <div class="text-center sm:w-1/3 sm:pr-8 sm:py-8">
                         <div
                             class="inline-flex items-center justify-center w-32 h-32 text-gray-400 bg-gray-200 rounded-full">
-                            <img src="{{ asset('images/gage.jpg') }}" alt="Me!" class="rounded-full">
+                            <img src="{{ asset('images/gage.jpg') }}" width="150" height="150" alt="Me!"
+                                class="rounded-full">
 
                         </div>
                         <div class="flex flex-col items-center justify-center text-center">
@@ -112,8 +113,8 @@
                 <div class="w-full p-4 text-center lg:w-1/4 sm:w-1/2">
                     <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">
                         Front End</h2>
-                    <nav class="flex flex-col items-center -mb-1 space-y-2.5">
-                        <a>
+                    <div class="flex flex-col items-center -mb-1 space-y-2.5">
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -121,8 +122,8 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>TailwindCSS
-                        </a>
-                        <a>
+                        </p>
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -130,8 +131,8 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>Bootstrap 5
-                        </a>
-                        <a>
+                        </p>
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -139,15 +140,15 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>HTML 5
-                        </a>
-                    </nav>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="w-full p-4 text-center lg:w-1/4 sm:w-1/2">
                     <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">
                         Back End</h2>
-                    <nav class="flex flex-col items-center -mb-1 space-y-2.5">
-                        <a>
+                    <div class="flex flex-col items-center -mb-1 space-y-2.5">
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -155,8 +156,8 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>PHP
-                        </a>
-                        <a>
+                        </p>
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -164,8 +165,8 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>Laravel
-                        </a>
-                        <a>
+                        </p>
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -173,15 +174,15 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>Codeigniter
-                        </a>
-                    </nav>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="w-full p-4 text-center lg:w-1/4 sm:w-1/2">
                     <h2 class="mb-4 text-xl font-semibold tracking-widest text-center text-indigo-600">
                         Coding</h2>
-                    <nav class="flex flex-col items-center -mb-1 space-y-2.5">
-                        <a>
+                    <div class="flex flex-col items-center -mb-1 space-y-2.5">
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -189,8 +190,8 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>VS Code
-                        </a>
-                        <a>
+                        </p>
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -198,8 +199,8 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>GIT/Github
-                        </a>
-                        <a>
+                        </p>
+                        <p>
                             <span
                                 class="inline-flex items-center justify-center w-4 h-4 mr-2 text-indigo-500 bg-indigo-900 rounded-full">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -207,8 +208,8 @@
                                     <path d="M20 6L9 17l-5-5"></path>
                                 </svg>
                             </span>Livewire
-                        </a>
-                    </nav>
+                        </p>
+                    </div>
                 </div>
 
                 <div class="w-full p-4 text-center lg:w-1/4 sm:w-1/2">
@@ -371,10 +372,10 @@
                             This is a work in progress to open source it. It includes everything from applications to
                             whitelisting while still a fully functional MDT!</p>
                         <div class="flex justify-between my-2">
-                            <a href="https://github.com/gsbarbo/Fivem-Cad" target="_blank"
+                            <a href="https://github.com/gsbarbo/Fivem-Cad" target="_blank" rel="noopener"
                                 class="text-lg text-indigo-600 cursor-pointer hover:underline">Github</a>
 
-                            <a href="https://cadv4.gagesspace.dev/" target="_blank"
+                            <a href="https://cadv4.gagesspace.dev/" target="_blank" rel="noopener"
                                 class="text-lg text-indigo-600 cursor-pointer hover:underline">Demo</a>
                         </div>
                     </div>
@@ -395,7 +396,7 @@
                             TailwindCSS. Also includes simple designed pages to manage roles, permissions and users.
                             Currently working to make into a NPM package.</p>
                         <div class="flex justify-between my-2">
-                            <a href="https://github.com/gsbarbo/laravel-admin-template" target="_blank"
+                            <a href="https://github.com/gsbarbo/laravel-admin-template" target="_blank" rel="noopener"
                                 class="text-lg text-indigo-600 cursor-pointer hover:underline">Github</a>
                         </div>
                     </div>
@@ -416,7 +417,7 @@
                             and documention for my projects. Be sure to look around and fell free to use
                             the contact form on the bottom to reach me!</p>
                         <div class="flex justify-between my-2">
-                            <a href="https://github.com/gsbarbo/gagesspace" target="_blank"
+                            <a href="https://github.com/gsbarbo/gagesspace" target="_blank" rel="noopener"
                                 class="text-lg text-indigo-600 cursor-pointer hover:underline">Github</a>
                         </div>
                     </div>
@@ -490,11 +491,9 @@
                                 class="flex px-8 py-2 mx-auto text-lg text-white bg-indigo-600 border-0 rounded focus:outline-none hover:bg-indigo-800">Send</button>
                         </div>
                         <div class="w-full p-2 pt-8 mt-8 text-center border-t border-gray-200">
-                            <a class="text-indigo-500 hover:underline"
-                                href="mailto:gagesspace@outlook.com">gagesspace@outlook.com</a>
+                            <p class="text-indigo-500">gagesspace@outlook.com</p>
                             <br>
-                            <a class="text-indigo-500 hover:underline"
-                                href="mailto:hello@gages.space">hello@gages.space</a>
+                            <p class="text-indigo-500">hello@gages.space</p>
                         </div>
                     </div>
                 </form>

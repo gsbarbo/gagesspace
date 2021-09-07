@@ -32138,6 +32138,7 @@ select {
 
 * {
   font-family: 'Catamaran', sans-serif;
+  font-display: swap;
   color: #cdd6e2;
 }
 
