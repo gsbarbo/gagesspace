@@ -8,7 +8,7 @@
                 Gage's Space
             </a>
             <button id="menuBtn" class="block hamburger lg:hidden focus:outline-none" type="button"
-                @click="mobileMenuOpen = !mobileMenuOpen">
+                aria-label="Mobile Menu" @click="mobileMenuOpen = !mobileMenuOpen">
                 <span class="bg-white hamburger__top-bun"></span>
                 <span class="bg-white hamburger__bottom-bun"></span>
             </button>

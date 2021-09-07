@@ -16,10 +16,12 @@
 
     <script src="{{ asset('js/app.js') }}" defer></script>
 
+    <meta name="description"
+        content="Hi! My name is Gage. I am a freelance web designer/developer. How often do you use the internet to find a business? Is your business online? I can get your website up and running quick and hassle free. Contact me today!!">
 
-    <script src="https://kit.fontawesome.com/0bcda0788a.js" crossorigin="anonymous"></script>
 
-    @livewireStyles
+    {{-- <script src="https://kit.fontawesome.com/0bcda0788a.js" crossorigin="anonymous"></script> --}}
+
 
     @yield('styles')
 </head>
@@ -36,8 +38,6 @@
 
     @include('_inc.public.footer')
 
-    @livewireScripts
-
     @yield('scripts')
 
     <script>
@@ -45,17 +45,6 @@
         var header = document.getElementById('top');
         nav.classList.add('nav-sticky');
         header.classList.add('pt-scroll');
-
-        // window.addEventListener('scroll', function() {
-        //     if (window.scrollY >= 400) { // adjust this value based on site structure and header image height
-        //         nav.classList.add('nav-sticky');
-
-        //         header.classList.add('pt-scroll');
-        //     } else {
-        //         nav.classList.remove('nav-sticky');
-        //         header.classList.remove('pt-scroll');
-        //     }
-        // });
     </script>
 
 </body>
