@@ -19,6 +19,10 @@
     <meta name="description"
         content="Hi! My name is Gage. I am a freelance web designer/developer. How often do you use the internet to find a business? Is your business online? I can get your website up and running quick and hassle free. Contact me today!!">
 
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0d1117" />
+    <link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}">
+
 
     {{-- <script src="https://kit.fontawesome.com/0bcda0788a.js" crossorigin="anonymous"></script> --}}
 
@@ -39,6 +43,16 @@
     @include('_inc.public.footer')
 
     @yield('scripts')
+
+    <script src="{{ asset('sw.js') }}"></script>
+
+    <script>
+        if (!navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register("{{ asset('sw.js') }}").then(function(reg) {
+                console.log("Service worker has been registered for scope: " + reg.scope);
+            });
+        }
+    </script>
 
     <script>
         var nav = document.getElementById('site-menu');
