@@ -28,9 +28,9 @@
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Projects</a>
             <a href="{{ route('home') }}#contact" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Contact</a>
-            {{-- <a href="{{ route('blog.index') }}" @click="mobileMenuOpen = false"
+            <a href="https://gagesspace.dev/blog" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Blog</a>
-            <a href="#" @click="mobileMenuOpen = false"
+            {{-- <a href="#" @click="mobileMenuOpen = false"
                 class="block w-full py-2 font-semibold hover:underline lg:w-auto lg:px-4 lg:py-1 lg:pt-2">Docs</a> --}}
             {{-- @guest
                 <a href="{{ route('login') }}" @click="mobileMenuOpen = false"
